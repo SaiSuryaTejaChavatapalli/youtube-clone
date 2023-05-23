@@ -26,7 +26,7 @@ const SpecificVideos = () => {
   useEffect(() => {
     const suggestion = suggestionSearch.get("search_query");
     fetch(
-      `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${suggestion}&type=video&key=${YOUTUBE_API_KEY}`
+      `https://corsproxy.io/?https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${suggestion}&type=video&key=${YOUTUBE_API_KEY}`
     )
       .then((response) => {
         return response.json();
