@@ -9,10 +9,10 @@ import WatchPage from "./components/WatchPage";
 import SpecificVideos from "./components/SpecificVideos";
 import Demo from "./components/Demo";
 import MainSidebar from "./components/MainSidebar";
+import ErrorFallback from "./components/ErrorFallback";
 const appRouter = createBrowserRouter([
   {
     path: "/",
-
     element: (
       <>
         <div className="fixed top-0 bg-white z-10 w-full">
@@ -44,6 +44,10 @@ const appRouter = createBrowserRouter([
         errorElement: <div>Oops!Spec video isn't working!</div>,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <ErrorFallback />,
   },
 ]);
 

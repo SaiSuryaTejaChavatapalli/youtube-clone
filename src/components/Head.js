@@ -5,6 +5,7 @@ import { YOUTUBE_SEARCH_API } from "../utils/constants";
 import { useNavigate } from "react-router-dom";
 import profileImg from "../utils/images/sst.jpeg";
 import { cacheResults } from "../utils/redux/searchSlice";
+import SearchIcon from "@mui/icons-material/Search";
 import ButtonList from "./ButtonList";
 const Head = () => {
   const dispatch = useDispatch();
@@ -78,10 +79,10 @@ const Head = () => {
               }}
             />
             <button
-              className="p-2 border border-gray-400 rounded-r-full bg-gray-100"
+              className="p-[6px] pt-2 border border-gray-400 rounded-r-full bg-gray-100"
               onClick={() => navigate(`results?search_query=${searchQuery}`)}
             >
-              &#128269;
+              <SearchIcon className="text-md" />
             </button>
           </div>
           {showSuggestions && (
