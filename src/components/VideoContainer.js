@@ -22,7 +22,7 @@ const VideoContainer = () => {
   return videos?.length === 0 ? (
     <Shimmer />
   ) : (
-    <div className="flex flex-wrap ml-24">
+    <div className="flex flex-wrap justify-around ml-24">
       {videos?.map((video) => (
         <Link to={`/watch?v=${video.id}`} key={video.id}>
           <VideoCard videoInfo={video} />
