@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 import profileImg from "../utils/images/sst.jpeg";
 import { cacheResults } from "../utils/redux/searchSlice";
 import SearchIcon from "@mui/icons-material/Search";
+import MenuIcon from "@mui/icons-material/Menu";
+import YoutubeLogo from "../utils/images/youtube-logo.png";
 import ButtonList from "./ButtonList";
 const Head = () => {
   const dispatch = useDispatch();
@@ -52,16 +54,15 @@ const Head = () => {
     <>
       <div className="grid grid-flow-col p-2 m-2 w-full">
         <div className="flex col-span-1">
-          <img
+          <MenuIcon
+            fontSize="large"
             onClick={() => toggleMenuHandler()}
-            className="h-8 cursor-pointer"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJD9Ks9HQlPD-Rpraa6krZtrX2yleg-hXwfQ&usqp=CAU"
-            alt="hamburger-menu"
+            className="h-9 w-8 cursor-pointer"
           />
           <a href="/">
             <img
               className="h-6 ml-4 py-0 mt-1"
-              src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-1-3.png"
+              src={YoutubeLogo}
               alt="youtube-logo"
             />
           </a>
