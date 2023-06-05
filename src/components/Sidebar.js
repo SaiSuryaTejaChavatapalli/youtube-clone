@@ -15,6 +15,7 @@ import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import SchoolIcon from "@mui/icons-material/School";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import { toggleMenu } from "../utils/redux/appSlice";
+import YoutubeLogo from "../utils/images/youtube-logo.png";
 const Sidebar = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
   const dispatch = useDispatch();
@@ -38,7 +39,7 @@ const Sidebar = () => {
             <a href="/">
               <img
                 className="h-4 ml-4 py-0 mt-2"
-                src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-1-3.png"
+                src={YoutubeLogo}
                 alt="youtube-logo"
               />
             </a>
