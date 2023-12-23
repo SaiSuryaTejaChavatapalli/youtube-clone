@@ -14,7 +14,7 @@ ReactJS, TailwindCSS, React-Router-Dom-V6, Redux-Toolkit, MaterialUI-Icons,
 
 ### Clone this Repository:
 
-You need to write the following commands on the terminal screen(in vscode) so that you can run this project locally.\
+You need to write the following commands on the terminal screen(in vscode) so that you can run this project locally.
 
 ```
 git clone https://github.com/SaiSuryaTejaChavatapalli/youtube-clone.git
